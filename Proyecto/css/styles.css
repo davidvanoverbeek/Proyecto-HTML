@@ -1,0 +1,48 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.titulo {
+    font-family: 'Century Gothic',sans-serif;
+    box-sizing: 1440px 53px;
+    background-color: rgb(39, 38, 38);
+    color: white;
+}
+
+nav{
+    padding: 1em;
+}
+
+nav li{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+nav #title{
+    margin-right: 32em;
+}
+
+nav a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
+    padding: 1em;
+    transition: 1s;
+}
+
+nav a:hover{
+    background: rgb(148, 7, 7);
+}
+
+.leyenda{
+    background-color: rgb(69, 65, 65);
+    border: 1px solid rgb(238, 238, 238);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    font-size: 200%;
+    padding: 1em;
+    text-shadow: 2px 2px 8px #000;
+}
+
