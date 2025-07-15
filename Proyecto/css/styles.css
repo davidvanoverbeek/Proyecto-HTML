@@ -5,9 +5,19 @@
 
 .titulo {
     font-family: 'Century Gothic',sans-serif;
-    box-sizing: 1440px 53px;
     background-color: rgb(39, 38, 38);
     color: white;
+}
+
+#foto {
+    width: 15%;
+    margin-left: 45%;
+}
+
+#descripcion {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 25px;
+    text-align: center;
 }
 
 nav{
@@ -44,5 +54,69 @@ nav a:hover{
     font-size: 200%;
     padding: 1em;
     text-shadow: 2px 2px 8px #000;
+}
+
+#imagenes {
+    background-color: rgb(69, 65, 65);
+}
+
+.proyect {
+    width: 15%;
+    margin-top: 0.5%;
+    margin-left: 10%;
+}
+
+div a .logos {
+    width: 8%;
+    margin-left: 4em;
+    margin-right: 4em;
+    margin-top: 1em;
+}
+
+div .cv{
+    margin-top: 1em;
+    font-size: 0.7em;
+    list-style-type: none;
+}
+
+div a .contactos {
+    width: 4%;
+    margin-right: 5em;
+    margin-top: 1em;
+}
+
+
+.cookie-popup{
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 8px;
+    display:none;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 500px;
+    margin: auto;
+    z-index: 1000;
+}
+
+.cookie-popup.show{
+    display: flex;
+}
+
+.cookie-popup button{
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cookie-popup a{
+    color: #007bff;
+    text-decoration: underline;
 }
 
