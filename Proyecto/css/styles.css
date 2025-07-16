@@ -3,10 +3,52 @@
     padding: 0;
 }
 
-.titulo {
+.cabecera {
+    background-color: rgb(69, 65, 65);
     font-family: 'Century Gothic',sans-serif;
-    background-color: rgb(39, 38, 38);
-    color: white;
+    padding: 16px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+
+#titulo {
+    font-size: 28px;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.boton-menu {
+    font-size: 28px;
+    color: #000;
+    text-decoration: none;
+    display: none;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.boton-menu:hover {
+    transform: scale(1.1);
+}
+
+.menu-principal {
+    display: flex;
+    gap: 24px;
+}
+
+.menu-principal a {
+    text-decoration: none;
+    color: #000;
+    font-size: 16px;
+    padding: 10px 14px;
+    border-radius: 10px;
+    transition: background 0.3s, color 0.3s;
+}
+
+.menu-principal a:hover {
+    background:#c91010;
+    color: #000;
 }
 
 #foto {
@@ -14,36 +56,10 @@
     margin-left: 45%;
 }
 
-#descripcion {
+.descripcion {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 25px;
-    text-align: center;
-}
-
-nav{
-    padding: 1em;
-}
-
-nav li{
-    text-decoration: none;
-    display: inline-block;
     font-size: 20px;
-}
-
-nav #title{
-    margin-right: 32em;
-}
-
-nav a{
-    text-decoration: none;
-    list-style-type: none;
-    color: white;
-    padding: 1em;
-    transition: 1s;
-}
-
-nav a:hover{
-    background: rgb(148, 7, 7);
+    text-align: center;
 }
 
 .leyenda{
@@ -51,7 +67,7 @@ nav a:hover{
     border: 1px solid rgb(238, 238, 238);
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
-    font-size: 200%;
+    font-size: 30px;
     padding: 1em;
     text-shadow: 2px 2px 8px #000;
 }
@@ -60,29 +76,47 @@ nav a:hover{
     background-color: rgb(69, 65, 65);
 }
 
-.proyect {
+.descrip{
+    margin-top: 2%;
+    list-style-type: none;
+    display: flex;
+}
+
+#descrip1 {
+    font-size: 20px;
+}
+
+#descrip2 {
+    font-size: 20px;
+}
+
+#descrip3 {
+    font-size: 20px;
+}
+
+.proyect img{
     width: 15%;
-    margin-top: 0.5%;
     margin-left: 10%;
+    margin-right: 5%; 
 }
 
 div a .logos {
     width: 8%;
-    margin-left: 4em;
-    margin-right: 4em;
-    margin-top: 1em;
+    margin-left: 10%;
+    margin-right: 5%;
+    margin-top: 2%;
 }
 
 div .cv{
-    margin-top: 1em;
-    font-size: 0.7em;
+    margin-top: 2%;
+    font-size: 20px;
     list-style-type: none;
 }
 
 div a .contactos {
-    width: 4%;
-    margin-right: 5em;
-    margin-top: 1em;
+    width: 8%;
+    margin-right: 20%;
+    margin-top: 2%;
 }
 
 
@@ -107,7 +141,7 @@ div a .contactos {
 }
 
 .cookie-popup button{
-    background-color: #007bff;
+    background-color: #ff0000;
     color: #fff;
     border: none;
     padding: 8px 14px;
@@ -116,7 +150,62 @@ div a .contactos {
 }
 
 .cookie-popup a{
-    color: #007bff;
+    color: #ff0000;
     text-decoration: underline;
+}
+
+@media screen and (max-width:700px) {
+    
+.boton-menu {
+    display: block;
+}
+
+.menu-principal {
+    display: none;
+    flex-direction: column;
+    gap: 12px;
+    text-align: center;
+    background-color: grey;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    padding: 15px 20px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    z-index: 100;
+}
+
+.menu-principal.menu-desplegado {
+    display: flex;
+}
+
+.menu-principal a {
+    padding: 10px 12px;
+    font-size: 17px;
+}
+
+.descripcion {
+    font-size: 15px;
+}
+
+#descrip1 {
+    font-size: 15px;
+}
+
+#descrip2 {
+    font-size: 15px;
+}
+
+#descrip3 {
+    font-size: 15px;
+}
+
+div .cv{
+    font-size: 15px;
+}
+
+.leyenda{
+    font-size: 25px;
+}
 }
 

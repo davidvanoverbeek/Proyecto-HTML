@@ -7,26 +7,22 @@
     <title>Portfolio</title>
 </head>
 <body>
-    <section class="superior">
-        <div class="titulo">
-        <nav>
-            <ul>
-                <li><h1 id="title">David antonio van Overbeek Crusells</h1></li>
-                <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#proyectos">Proyectos</a></li>
-                <li><a href="#curriculum">Curriculum</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
+    <header class="cabecera">
+        <h1 id="titulo">David antonio van Overbeek Crusells</h1>
+        <a href="#" id="enlace-menu" class="boton-menu">&#9776;</a>
+        <nav id="menu" class="menu-principal">
+            <a href="#inicio">Inicio</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#curriculum">Curriculum</a>
+            <a href="#contacto">Contacto</a>
         </nav>
-        </div>
-    </section>
+    </header>
     <section id="inicio">
         <div class="leyenda">
             <div>
                 <img id="foto" src="img/FOTO_PERFIL.jpg" alt="foto perfil">
-                <p id="descripcion">Hola soy David Antonio van Overbeek Crusells, estudiante de DAW en la academia ThePower.
-                    Tengo 22 años, soy sociable y me gusta trabajar en equipo.
+                <p class="descripcion">Hola soy David, Desarrollador web con ganas de acumular experiencia y aprender nuevas tecnicas. Estoy listo para saltar al mundo laboral. 
                 </p>
             </div>
         </div>
@@ -44,9 +40,16 @@
     <section id="proyectos">
         <div class="leyenda">Proyectos
             <div>
-                <a href="https://www.dominospizza.es/promociones-pizza-para-llevar?utm_source=google&utm_medium=sem&utm_campaign=ES_ALSEA_DOMINOS_SALES_MULTI_AO_0625_197894_LANZAMIENTOBURGER&utm_content=brand&gad_source=1&gad_campaignid=13371376247&gbraid=0AAAAADxyZakTcsit5Z9QYI-2cYopMsCTg&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeBouhuKi4lCHNlLAdoeyax-WDLNT9EgFggQ713DE_YkAINGwC0P8iEaAtFIEALw_wcB&gclsrc=aw.ds" target="_blank"><img class="proyect" src="img/pizzeria.png" alt="pizzeria"></a>
-                <a href="https://www.autodoc.es/?utm_medium=cpc&utm_source=google&tb_prm=20005931481&brnd=1&gad_source=1&gad_campaignid=20005931481&gbraid=0AAAAAoWFwrc8CSk-FHNS58s_EGrXjQE6n&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeCoHa90YfniQQtxclxi4lrJyorsJw8i-pI-OYjo_-Pq-ku6Xl5B2V4aAqyhEALw_wcB"><img class="proyect" src="img/Mecanico.png" alt="taller mecanico" target="_blank"></a>
-                <a href="https://es.pandora.net/es/?cid=sem:branded:e:es-es:male-female:adwords:es_es_search_brand_x_lowerfunnel_x_x_exact_purebrand:alwayson21:te:conversions::pandora&ds_rl=1290718&gad_source=1&gad_campaignid=1539494606&gbraid=0AAAAADsghD1o20upw3hRWGNsJ6Y-uF64S&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeC-ov59IYOuSGZ-3pinsIxBemfNeCSRxDqN9UMqe5_yhSelQEHYaEkaAvW7EALw_wcB&gclsrc=aw.ds" target="_blank"><img class="proyect" src="img/joyeria.png" alt="joyeria"></a>
+                <a href="https://www.dominospizza.es/promociones-pizza-para-llevar?utm_source=google&utm_medium=sem&utm_campaign=ES_ALSEA_DOMINOS_SALES_MULTI_AO_0625_197894_LANZAMIENTOBURGER&utm_content=brand&gad_source=1&gad_campaignid=13371376247&gbraid=0AAAAADxyZakTcsit5Z9QYI-2cYopMsCTg&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeBouhuKi4lCHNlLAdoeyax-WDLNT9EgFggQ713DE_YkAINGwC0P8iEaAtFIEALw_wcB&gclsrc=aw.ds" class="proyect" target="_blank"><img src="img/pizzeria.png"></a>
+                <a href="https://www.autodoc.es/?utm_medium=cpc&utm_source=google&tb_prm=20005931481&brnd=1&gad_source=1&gad_campaignid=20005931481&gbraid=0AAAAAoWFwrc8CSk-FHNS58s_EGrXjQE6n&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeCoHa90YfniQQtxclxi4lrJyorsJw8i-pI-OYjo_-Pq-ku6Xl5B2V4aAqyhEALw_wcB" class="proyect" target="_blank"><img src="img/Mecanico.png"></a>
+                <a href="https://es.pandora.net/es/?cid=sem:branded:e:es-es:male-female:adwords:es_es_search_brand_x_lowerfunnel_x_x_exact_purebrand:alwayson21:te:conversions::pandora&ds_rl=1290718&gad_source=1&gad_campaignid=1539494606&gbraid=0AAAAADsghD1o20upw3hRWGNsJ6Y-uF64S&gclid=Cj0KCQjw-NfDBhDyARIsAD-ILeC-ov59IYOuSGZ-3pinsIxBemfNeCSRxDqN9UMqe5_yhSelQEHYaEkaAvW7EALw_wcB&gclsrc=aw.ds" class="proyect" target="_blank"><img src="img/joyeria.png"></a>
+                <ul class="descrip">
+                    <li id="descrip1">Web de pizzeria donde puedes encargarlas a domicilio</li>
+                    <li>&nbsp;</li>
+                    <li id="descrip2">Web de piezas de repuesto para vehiculos para uso de talleres</li>
+                    <li>&nbsp;</li>
+                    <li id="descrip3">Web de una joyeria para ver el catalogo</li>
+                </ul>
             </div>
         </div>
     </section>
